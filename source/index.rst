@@ -44,16 +44,16 @@ Contents:
 * 1.7.2 HTML と CSS のスタイルガイド . . . . . . . . . . . . . . . . . . . . . . . 10
 * 1.8 IDE (やテキストエディタ)に依存したコードを書かない . . . . . . . . . . . . . . . . . . . . . . 10
 * 1.9 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-* 2 The Optimal Django Environment Setup 13
-* 2.1 Use the Same Database Engine Everywhere . . . . . . . . . . . . . . . . . . . . 13
-* 2.1.1 Fixtures Are Not a Magic Solution . . . . . . . . . . . . . . . . . . . . . 13
-* 2.1.2 You Can’t Examine an Exact Copy of Production Data Locally . . . . . . 14
-* 2.1.3 Different Databases Have Different Field Types/Constraints . . . . . . . 14
-* 2.2 Use Pip and Virtualenv . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-* 2.3 Install Django and Other Dependencies via Pip . . . . . . . . . . . . . . . . . . 17
-* 2.4 Use a Version Control System . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-* 2.5 Optional: Identical Environments . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-* 2.5.1 Vagrant and VirtualBox . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+* 2 最適なDjango環境セットアップ 13
+* 2.1 どの場所でも同じデータベースエンジンを使う . . . . . . . . . . . . . . . . . . . . 13
+* 2.1.1 フィクスチャーは魔法の解法ではない . . . . . . . . . . . . . . . . . . . . . 13
+* 2.1.2 本番環境のデータをローカルに完璧にはコピーできない . . . . . . 14
+* 2.1.3 違ったデータベースでは違ったフィールドのタイプ/制約が存在する . . . . . . . 14
+* 2.2 Pip と Virtualenv を使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+* 2.3 Pip で Django と他の依存パッケージをインストールする . . . . . . . . . . . . . . . . . . 17
+* 2.4 バージョンコントロールシステムを使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+* 2.5 オプショナル: 開発環境を同じにする . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+* 2.5.1 Vagrant と VirtualBox . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
 * 2.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
 * 3 How to Lay Out Django Projects 21
 * 3.1 Django 1.8’s Default Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . 21
