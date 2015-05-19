@@ -31,18 +31,18 @@ Contents:
 * Stand on the Shoulders of Giants . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxv
 * Listen to Our Readers and Reviewers . . . . . . . . . . . . . . . . . . . . . . . . xxxvi
 * Publish Errata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxvi
-* 1 Coding Style 1
-* 1.1 The Importance of Making Your Code Readable . . . . . . . . . . . . . . . . . . 1
+* 1 コーディングスタイル 1
+* 1.1 コードの可読性を保つ重要さ . . . . . . . . . . . . . . . . . . 1
 * 1.2 PEP 8 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-* 1.2.1 The 79 Character Limit . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-* 1.3 The Word on Imports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-* 1.4 Use Explicit Relative Imports . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-* 1.5 Avoid Using Import * . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-* 1.6 Consider the Django Coding Style Guidelines . . . . . . . . . . . . . . . . . . . 9
-* 1.7 Choose JS, HTML, and CSS Style Guides . . . . . . . . . . . . . . . . . . . . . 9
-* 1.7.1 JavaScript Style Guides . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-* 1.7.2 HTML and CSS Style Guides . . . . . . . . . . . . . . . . . . . . . . . 10
-* 1.8 Never Code to the IDE (Or Text Editor) . . . . . . . . . . . . . . . . . . . . . . 10
+* 1.2.1 79文字制限 . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+* 1.3 インポート文の書き方 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+* 1.4 明示的な相対インポートを使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+* 1.5 * インポートを使わない . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+* 1.6 Django固有のコーディングスタイル . . . . . . . . . . . . . . . . . . . 9
+* 1.7 JS、HTML、CSS のスタイルガイドを選ぶ . . . . . . . . . . . . . . . . . . . . . 9
+* 1.7.1 JavaScript スタイルガイド . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+* 1.7.2 HTML と CSS のスタイルガイド . . . . . . . . . . . . . . . . . . . . . . . 10
+* 1.8 IDE (やテキストエディタ)に依存したコードを書かない . . . . . . . . . . . . . . . . . . . . . . 10
 * 1.9 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
 * 2 The Optimal Django Environment Setup 13
 * 2.1 Use the Same Database Engine Everywhere . . . . . . . . . . . . . . . . . . . . 13
