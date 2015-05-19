@@ -43,7 +43,7 @@ Contents:
 * 1.7.1 JavaScript Style Guides . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
 * 1.7.2 HTML and CSS Style Guides . . . . . . . . . . . . . . . . . . . . . . . 10
 * 1.8 Never Code to the IDE (Or Text Editor) . . . . . . . . . . . . . . . . . . . . . . 10
-* 1.9 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+* 1.9 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
 * 2 The Optimal Django Environment Setup 13
 * 2.1 Use the Same Database Engine Everywhere . . . . . . . . . . . . . . . . . . . . 13
 * 2.1.1 Fixtures Are Not a Magic Solution . . . . . . . . . . . . . . . . . . . . . 13
@@ -54,7 +54,7 @@ Contents:
 * 2.4 Use a Version Control System . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 * 2.5 Optional: Identical Environments . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 * 2.5.1 Vagrant and VirtualBox . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
-* 2.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+* 2.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
 * 3 How to Lay Out Django Projects 21
 * 3.1 Django 1.8’s Default Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . 21
 * 3.2 Our Preferred Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
@@ -64,7 +64,7 @@ Contents:
 * 3.4 What About the Virtualenv? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 * 3.5 Using a Cookiecutter Template to Generate Our Layout . . . . . . . . . . . . . . 28
 * 3.6 Other Alternatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
-* 3.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+* 3.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 * 4 Fundamentals of Django App Design 31
 * 4.1 The Golden Rule of Django App Design . . . . . . . . . . . . . . . . . . . . . . 32
 * 4.1.1 A Practical Example of Apps in a Project . . . . . . . . . . . . . . . . . . 33
@@ -73,7 +73,7 @@ Contents:
 * 4.4 What Modules Belong in an App? . . . . . . . . . . . . . . . . . . . . . . . . . 35
 * 4.4.1 Common App Modules . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 * 4.4.2 Uncommon App Modules . . . . . . . . . . . . . . . . . . . . . . . . . 36
-* 4.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+* 4.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
 * 5 Settings and Requirements Files 39
 * 5.1 Avoid Non-Versioned Local Settings . . . . . . . . . . . . . . . . . . . . . . . . 40
 * 5.2 Using Multiple Settings Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
@@ -91,7 +91,7 @@ Contents:
 * 5.5.1 Installing From Multiple Requirements Files . . . . . . . . . . . . . . . . 55
 * 5.5.2 Using Multiple Requirements Files With Platforms as a Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
 * 5.6 Handling File Paths in Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
-* 5.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+* 5.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
 * 6 Model Best Practices 61
 * 6.1 Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
 * 6.1.1 Break Up Apps With Too Many Models . . . . . . . . . . . . . . . . . . 62
@@ -112,7 +112,7 @@ Contents:
 * 6.5.1 Model Behaviors a.k.a Mixins . . . . . . . . . . . . . . . . . . . . . . . 76
 * 6.5.2 Stateless Helper Functions . . . . . . . . . . . . . . . . . . . . . . . . . 77
 * 6.5.3 Model Behaviors vs Helper Functions . . . . . . . . . . . . . . . . . . . 77
-* 6.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+* 6.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
 * 7 Queries and the Database Layer 79
 * 7.1 Use get object or 404() for Single Objects . . . . . . . . . . . . . . . . . . . . . 79
 * 7.2 Be Careful With Queries That Might Throw Exceptions . . . . . . . . . . . . . . 80
@@ -130,7 +130,7 @@ Contents:
 * 7.7.3 django.http.StreamingHttpResponse and Transactions . . . . . . . . . . 91
 * 7.7.4 Transactions in MySQL . . . . . . . . . . . . . . . . . . . . . . . . . . 92
 * 7.7.5 Django ORM Transaction Resources . . . . . . . . . . . . . . . . . . . . 92
-* 7.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
+* 7.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
 * 8 Function- and Class-Based Views 93
 * 8.1 When to Use FBVs or CBVs . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
 * 8.2 Keep View Logic Out of URLConfs . . . . . . . . . . . . . . . . . . . . . . . . 95
@@ -145,7 +145,7 @@ Contents:
 * 8.6 Try to Keep Business Logic Out of Views . . . . . . . . . . . . . . . . . . . . . 103
 * 8.7 Django Views Are Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
 * 8.7.1 The Simplest Views . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
-* 8.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+* 8.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
 * 9 Best Practices for Function-Based Views 107
 * 9.1 Advantages of FBVs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
 * 9.2 Passing the HttpRequest Object . . . . . . . . . . . . . . . . . . . . . . . . . . 108
@@ -153,7 +153,7 @@ Contents:
 * 9.3.1 Be Conservative With Decorators . . . . . . . . . . . . . . . . . . . . . 113
 * 9.3.2 Additional Resources on Decorators . . . . . . . . . . . . . . . . . . . . 114
 * 9.4 Passing the HttpResponse Object . . . . . . . . . . . . . . . . . . . . . . . . . . 114
-* 9.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+* 9.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
 * 10 Best Practices for Class-Based Views 115
 * 10.1 Guidelines When Working With CBVs . . . . . . . . . . . . . . . . . . . . . . 116
 * 10.2 Using Mixins With CBVs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
@@ -168,7 +168,7 @@ Contents:
 * 10.5.2 Views + Form Example . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
 * 10.6 Using Just django.views.generic.View . . . . . . . . . . . . . . . . . . . . . . . . 131
 * 10.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
-* 10.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+* 10.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
 * 11 Form Fundamentals 135
 * 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
 * 11.2 Use the POST Method in HTML Forms . . . . . . . . . . . . . . . . . . . . . 138
@@ -179,14 +179,14 @@ Contents:
 * 11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 * 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+* 11.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 12 Common Patterns for Forms 145
 * 12.1 Pattern 1: Simple ModelForm With Default Validators . . . . . . . . . . . . . . 146
 * 12.2 Pattern 2: Custom Form Field Validators in ModelForms . . . . . . . . . . . . . 147
 * 12.3 Pattern 3: Overriding the Clean Stage of Validation . . . . . . . . . . . . . . . . 152
 * 12.4 Pattern 4: Hacking Form Fields (2 CBVs, 2 Forms, 1 Model) . . . . . . . . . . . 155
 * 12.5 Pattern 5: Reusable Search Mixin View . . . . . . . . . . . . . . . . . . . . . . . 159
-* 12.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+* 12.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
 * 13 Templates: Best Practices 163
 * 13.1 Keep Templates Mostly in templates/ . . . . . . . . . . . . . . . . . . . . . . 163
 * 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
@@ -201,7 +201,7 @@ Contents:
 * 13.3.5 Gotcha 5: Hidden REST API Calls in Templates . . . . . . . . . . . . . 175
 * 13.4 Don’t Bother Making Your Generated HTML Pretty . . . . . . . . . . . . . . . 175
 * 10.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
-* 10.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+* 10.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
 * 11 Form Fundamentals 135
 * 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
 * 11.2 Use the POST Method in HTML Forms . . . . . . . . . . . . . . . . . . . . . 138
@@ -212,14 +212,14 @@ Contents:
 * 11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 * 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+* 11.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 12 Common Patterns for Forms 145
 * 12.1 Pattern 1: Simple ModelForm With Default Validators . . . . . . . . . . . . . . 146
 * 12.2 Pattern 2: Custom Form Field Validators in ModelForms . . . . . . . . . . . . . 147
 * 12.3 Pattern 3: Overriding the Clean Stage of Validation . . . . . . . . . . . . . . . . 152
 * 12.4 Pattern 4: Hacking Form Fields (2 CBVs, 2 Forms, 1 Model) . . . . . . . . . . . 155
 * 12.5 Pattern 5: Reusable Search Mixin View . . . . . . . . . . . . . . . . . . . . . . . 159
-* 12.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+* 12.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
 * 13 Templates: Best Practices 163
 * 13.1 Keep Templates Mostly in templates/ . . . . . . . . . . . . . . . . . . . . . . 163
 * 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
@@ -238,7 +238,7 @@ Contents:
 * 15.3.4 Context Processors Aren’t Called by Jinja2 Templates . . . . . . . . . . . 198
 * 15.3.5 The Jinja2 Environment Object Should Be Considered Static . . . . . . . 200
 * 15.4 Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
-* 15.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+* 15.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
 * 16 Building REST APIs 203
 * 16.1 Fundamentals of Basic REST API Design . . . . . . . . . . . . . . . . . . . . . 204
 * 16.2 Implementing a Simple JSON API . . . . . . . . . . . . . . . . . . . . . . . . . 206
@@ -266,7 +266,7 @@ Contents:
 * 16.8.1 Documentation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
 * 16.8.2 Provide Client SDKs . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
 * 16.9 Additional Reading . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
-* 16.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+* 16.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
 * 17 Consuming REST APIs 221
 * 17.1 Learn How to Debug the Client . . . . . . . . . . . . . . . . . . . . . . . . . . 222
 * 17.2 Consider Using JavaScript-Powered Static Asset Preprocessors . . . . . . . . . . 223
@@ -293,7 +293,7 @@ Contents:
 * 17.7.2 Learn More JavaScript! . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
 * 17.8 Follow JavaScript Coding Standards . . . . . . . . . . . . . . . . . . . . . . . . 231
 * 17.9 Useful Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
-* 17.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
+* 17.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
 * 18 Tradeoffs of Replacing Core Components 233
 * 18.1 The Temptation to Build FrankenDjango . . . . . . . . . . . . . . . . . . . . . . 234
 * 18.2 Non-Relational Databases vs. Relational Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
@@ -302,7 +302,7 @@ Contents:
 * 18.2.3 Ignore the Hype and Do Your Own Research . . . . . . . . . . . . . . . 236
 * 18.2.4 How We Use Non-Relational Databases With Django . . . . . . . . . . 237
 * 18.3 What About Replacing the Django Template Language? . . . . . . . . . . . . . 237
-* 18.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
+* 18.4 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
 * 19 Working With the Django Admin 239
 * 19.1 It’s Not for End Users . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 240
 * 19.2 Admin Customization vs. New Views . . . . . . . . . . . . . . . . . . . . . . . 240
@@ -314,7 +314,7 @@ Contents:
 * 19.8 Using Custom Skins With the Django Admin . . . . . . . . . . . . . . . . . . . 247
 * 19.8.1 Evaluation Point: Documentation is Everything . . . . . . . . . . . . . . 248
 * 19.8.2 Write Tests for Any Admin Extensions You Create . . . . . . . . . . . . 248
-* 19.9 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
+* 19.9 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
 * 20 Dealing With the User Model 251
 * 20.1 Use Django’s Tools for Finding the User Model . . . . . . . . . . . . . . . . . . 251
 * 20.1.1 Use settings.AUTH USER MODEL for Foreign Keys to User . . . . . 252
@@ -324,7 +324,7 @@ Contents:
 * 20.3.1 Option 1: Subclass AbstractUser . . . . . . . . . . . . . . . . . . . . . . 254
 * 20.3.2 Option 2: Subclass AbstractBaseUser . . . . . . . . . . . . . . . . . . . . 255
 * 20.3.3 Option 3: Linking Back From a Related Model . . . . . . . . . . . . . . 255
-* 20.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257
+* 20.4 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257
 * 21 Django’s Secret Sauce: Third-Party Packages 259
 * 21.1 Examples of Third-Party Packages . . . . . . . . . . . . . . . . . . . . . . . . . 260
 * 21.2 Know About the Python Package Index . . . . . . . . . . . . . . . . . . . . . . 260
@@ -366,7 +366,7 @@ Contents:
 * 21.12.7 Provide Sample Base Templates . . . . . . . . . . . . . . . . . . . . . . 277
 * 21.12.8 Give the Package Away . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
 * 21.13 Additional Reading . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
-* 21.14 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
+* 21.14 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
 * 22 Testing Stinks and Is a Waste of Money! 279
 * 22.1 Testing Saves Money, Jobs, and Lives . . . . . . . . . . . . . . . . . . . . . . . . 279
 * 22.2 How to Structure Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 280
@@ -391,7 +391,7 @@ Contents:
 * 22.8.3 Step 3: Generate the Report! . . . . . . . . . . . . . . . . . . . . . . . . 294
 * 22.9 Playing the Game of Test Coverage . . . . . . . . . . . . . . . . . . . . . . . . . 295
 * 22.10 Alternatives to unittest . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 295
-* 22.11 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 296
+* 22.11 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 296
 * 23 Documentation: Be Obsessed 297
 * 23.1 Use reStructuredText for Python Docs . . . . . . . . . . . . . . . . . . . . . . . 297
 * 23.2 Use Sphinx to Generate Documentation From reStructuredText . . . . . . . . . . 299
@@ -401,7 +401,7 @@ Contents:
 * 23.5.1 README.md to README.rst: Using Pandoc for Packages Uploaded to PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 * 23.5.2 Markdown Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 * 23.6 Wikis and Other Documentation Methods . . . . . . . . . . . . . . . . . . . . . 303
-* 23.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
+* 23.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
 * 24 Finding and Reducing Bottlenecks 305
 * 24.1 Should You Even Care? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 305
 * 24.2 Speed Up Query-Heavy Pages . . . . . . . . . . . . . . . . . . . . . . . . . . . 305
@@ -419,7 +419,7 @@ Contents:
 * 24.7 Compression and Minification of HTML, CSS, and JavaScript . . . . . . . . . . 311
 * 24.8 Use Upstream Caching or a Content Delivery Network . . . . . . . . . . . . . . 312
 * 24.9 Other Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312
-* 24.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
+* 24.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
 * 25 Asynchronous Task Queues 315
 * 25.1 Do We Need a Task Queue? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 316
 * 25.2 Choosing Task Queue Software . . . . . . . . . . . . . . . . . . . . . . . . . . . 317
@@ -436,7 +436,7 @@ Contents:
 * 25.3.10 All Tasks Should Accept Kwargs . . . . . . . . . . . . . . . . . . . . . . 321
 * 25.3.11 Learn the Features of Your Task Queue Software . . . . . . . . . . . . . 321
 * 25.4 Resources for Task Queues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 321
-* 25.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
+* 25.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
 * 26 Security Best Practices 323
 * 26.1 Harden Your Servers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 323
 * 26.2 Know Django’s Security Features . . . . . . . . . . . . . . . . . . . . . . . . . . 323
@@ -492,7 +492,7 @@ Contents:
 * 26.29.4 Email security@djangoproject.com, Even if It’s Your Fault . . . . . . . . 346
 * 26.29.5 Start Looking Into the Problem . . . . . . . . . . . . . . . . . . . . . . 346
 * 26.30 Keep Up-to-Date on General Security Practices . . . . . . . . . . . . . . . . . . 347
-* 26.31 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 348
+* 26.31 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 348
 * 27 Logging: What’s It For, Anyway? 349
 * 27.1 Application Logs vs. Other Logs . . . . . . . . . . . . . . . . . . . . . . . . . . 349
 * 27.2 Why Bother With Logging? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 350
@@ -508,7 +508,7 @@ Contents:
 * 27.7 Other Logging Tips . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357
 * 27.8 Necessary Reading Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357
 * 27.9 Useful Third-Party Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
-* 27.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
+* 27.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
 * 28 Signals: Use Cases and Avoidance Techniques 359
 * 28.1 When to Use and Avoid Signals . . . . . . . . . . . . . . . . . . . . . . . . . . 359
 * 28.2 Signal Avoidance Techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . 360
@@ -516,7 +516,7 @@ Contents:
 * 28.2.2 Validate Your Model Elsewhere . . . . . . . . . . . . . . . . . . . . . . . 363
 * 28.2.3 Override Your Model’s Save or Delete Method Instead . . . . . . . . . . 363
 * 28.2.4 Use a Helper Function Instead of Signals . . ... ..  .. ..  .  ... . . . . . 364
-* 28.3 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364
+* 28.3 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364
 * 29 What About Those Random Utilities? 365
 * 29.1 Create a Core App for Your Utilities . . . . . . . . . . . . . . . . . . . . . . . . 365
 * 29.2 Django’s Own Swiss Army Knife . . . . . . . . . . . . . . . . . . . . . . . . . . 366
@@ -540,7 +540,7 @@ Contents:
 * 29.4.1 django.core.serializers.json.DjangoJSONEncoder . . . . . . . . . . . . . 377
 * 29.4.2 django.core.serializers.pyyaml . . . . . . . . . . . . . . . . . . . . . . . . 377
 * 29.4.3 django.core.serializers.xml serializer . . . . . . . . . . . . . . . . . . . . 378
-* 29.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 378
+* 29.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 378
 * 30 Deployment: Platforms as a Service 379
 * 30.1 Evaluating a PaaS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
 * 30.1.1 Compliance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
@@ -558,7 +558,7 @@ Contents:
 * 30.2.3 Maintain a Staging Instance . . . . . . . . . . . . . . . . . . . . . . . . 385
 * 30.2.4 Prepare for Disaster With Backups and Rollbacks . . . . . . . . . . . . . 385
 * 30.2.5 Keep External Backups . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
-* 30.3 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
+* 30.3 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
 * 31 Deploying Django Projects 387
 * 31.1 Single-Server for Small Projects . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
 * 31.1.1 Should You Bother? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
@@ -578,7 +578,7 @@ Contents:
 * 31.8.2 Do Your Own Research . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
 * 31.9 Current Infrastructure Automation Tools . . . . . . . . . . . . . . . . . . . . . . 400
 * 31.10 Other Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
-* 31.11 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 403
+* 31.11 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 403
 * 32 Continuous Integration 405
 * 32.1 Principles of Continuous Integration . . . . . . . . . . . . . . . . . . . . . . . . 406
 * 32.1.1 Write Lots of Tests! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406
@@ -589,7 +589,7 @@ Contents:
 * 32.3 Continuous Integration as a Service . . . . . . . . . . . . . . . . . . . . . . . . . 408
 * 32.3.1 Code Coverage as a Service . . . . . . . . . . . . . . . . . . . . . . . . . 409
 * 32.4 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
-* 32.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
+* 32.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
 * 33 The Art of Debugging 411
 * 33.1 Debugging in Development . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
 * 33.1.1 Use django-debug-toolbar . . . . . . . . . . . . . . . . . . . . . . . . . 411
@@ -605,14 +605,14 @@ Contents:
 * 33.3 Feature Flags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 419
 * 33.3.1 Feature Flag Packages . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
 * 33.3.2 Unit Testing Code Affected by Feature Flags . . . . . . . . . . . . . . . 420
-* 33.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
+* 33.4 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
 * 34 Where and How to Ask Django Questions 421
 * 34.1 What to Do When You’re Stuck . . . . . . . . . . . . . . . . . . . . . . . . . . 421
 * 34.2 How to Ask Great Django Questions in IRC . . . . . . . . . . . . . . . . . . . 421
 * 34.3 Feed Your Brain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 422
 * 34.4 Insider Tip: Be Active in the Community . . . . . . . . . . . . . . . . . . . . . 422
 * 34.4.1 9 Easy Ways to Participate . . . . . . . . . . . . . . . . . . . . . . . . . 423
-* 34.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
+* 34.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
 * 35 Closing Thoughts 425
 * Appendix A: Packages Mentioned In This Book 427
 * Appendix B: Troubleshooting Installation 435
