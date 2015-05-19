@@ -517,66 +517,66 @@ Contents:
 * 28.2.3 Override Your Model’s Save or Delete Method Instead . . . . . . . . . . 363
 * 28.2.4 Use a Helper Function Instead of Signals . . ... ..  .. ..  .  ... . . . . . 364
 * 28.3 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364
-* 29 What About Those Random Utilities? 365
-* 29.1 Create a Core App for Your Utilities . . . . . . . . . . . . . . . . . . . . . . . . 365
-* 29.2 Django’s Own Swiss Army Knife . . . . . . . . . . . . . . . . . . . . . . . . . . 366
+* 29 雑多なユーティリティについて? 365
+* 29.1 Coreアプリをユーティリティのために作る . . . . . . . . . . . . . . . . . . . . . . . . 365
+* 29.2 Djangoのスイスアーミーナイフ . . . . . . . . . . . . . . . . . . . . . . . . . . 366
 * 29.2.1 django.contrib.humanize . . . . . . . . . . . . . . . . . . . . . . . . . . 367
-* 29.2.2 django.utils.decorators.method decorator(decorator) . . . . . . . . . . . . 367
-* 29.2.3 django.utils.decorators.decorator from middleware(middleware) . . . . . 367
-* 29.2.4 django.utils.encoding.force text(value) . . . . . . . . . . . . . . . . . . . 368
-* 29.2.5 django.utils.functional.cached property . . . . . . . . . . . . . . . . . . . 368
-* 29.2.6 django.utils.html.format html(format str, *args, **kwargs) . . . . . . . . . 369
-* 29.2.7 django.utils.html.remove tags(value, tags) . . . . . . . . . . . . . . . . . 369
-* 29.2.8 django.utils.html.strip tags(value) . . . . . . . . . . . . . . . . . . . . . . 369
+* 29.2.2 django.utils.decorators.method_decorator(decorator) . . . . . . . . . . . . 367
+* 29.2.3 django.utils.decorators.decorator_from_middleware(middleware) . . . . . 367
+* 29.2.4 django.utils.encoding.force_text(value) . . . . . . . . . . . . . . . . . . . 368
+* 29.2.5 django.utils.functional.cached_property . . . . . . . . . . . . . . . . . . . 368
+* 29.2.6 django.utils.html.format_html(format_str, \*args, \*\*kwargs) . . . . . . . . . 369
+* 29.2.7 django.utils.html.remove_tags(value, tags) . . . . . . . . . . . . . . . . . 369
+* 29.2.8 django.utils.html.strip_tags(value) . . . . . . . . . . . . . . . . . . . . . . 369
 * 29.2.9 django.utils.six . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 369
 * 29.2.10 django.utils.text.slugify(value) . . . . . . . . . . . . . . . . . . . . . . . . 370
 * 29.2.11 django.utils.timezone . . . . . . . . . . . . . . . . . . . . . . . . . . . . 371
 * 29.2.12 django.utils.translation . . . . . . . . . . . . . . . . . . . . . . . . . . . 372
-* 29.3 Exceptions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 372
+* 29.3 例外 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 372
 * 29.3.1 django.core.exceptions.ImproperlyConfigured . . . . . . . . . . . . . . . 372
 * 29.3.2 django.core.exceptions.ObjectDoesNotExist . . . . . . . . . . . . . . . . 372
 * 29.3.3 django.core.exceptions.PermissionDenied . . . . . . . . . . . . . . . . . 373
-* 29.4 Serializers and Deserializers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 374
+* 29.4 シリアライザとデシリアライザ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 374
 * 29.4.1 django.core.serializers.json.DjangoJSONEncoder . . . . . . . . . . . . . 377
 * 29.4.2 django.core.serializers.pyyaml . . . . . . . . . . . . . . . . . . . . . . . . 377
-* 29.4.3 django.core.serializers.xml serializer . . . . . . . . . . . . . . . . . . . . 378
+* 29.4.3 django.core.serializers.xml_serializer . . . . . . . . . . . . . . . . . . . . 378
 * 29.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 378
-* 30 Deployment: Platforms as a Service 379
-* 30.1 Evaluating a PaaS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
-* 30.1.1 Compliance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
-* 30.1.2 Pricing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 381
-* 30.1.3 Uptime . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 381
-* 30.1.4 Staffing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 382
-* 30.1.5 Scaling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 382
-* 30.1.6 Documentation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 383
-* 30.1.7 Performance Degradation . . . . . . . . . . . . . . . . . . . . . . . . . . 383
-* 30.1.8 Geography . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384
-* 30.1.9 Company Stability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384
-* 30.2 Best Practices for Deploying to PaaS . . . . . . . . . . . . . . . . . . . . . . . . 384
-* 30.2.1 Aim for Identical Environments . . . . . . . . . . . . . . . . . . . . . . 384
-* 30.2.2 Automate All the Things! . . . . . . . . . . . . . . . . . . . . . . . . . . 385
-* 30.2.3 Maintain a Staging Instance . . . . . . . . . . . . . . . . . . . . . . . . 385
-* 30.2.4 Prepare for Disaster With Backups and Rollbacks . . . . . . . . . . . . . 385
-* 30.2.5 Keep External Backups . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
+* 30 Platforms as a Serviceにデプロイする 379
+* 30.1 PaaSを評価する . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
+* 30.1.1 コンプライアンス . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380
+* 30.1.2 価格 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 381
+* 30.1.3 アップタイム . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 381
+* 30.1.4 スタッフ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 382
+* 30.1.5 スケーリング . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 382
+* 30.1.6 ドキュメント . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 383
+* 30.1.7 パフォーマンス劣化 . . . . . . . . . . . . . . . . . . . . . . . . . . 383
+* 30.1.8 地理的な性質 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384
+* 30.1.9 企業の安定度 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384
+* 30.2 PaaSにデプロイするときのよい方法 . . . . . . . . . . . . . . . . . . . . . . . . 384
+* 30.2.1 環境をできるだけ同じにする . . . . . . . . . . . . . . . . . . . . . . 384
+* 30.2.2 全て自動化! . . . . . . . . . . . . . . . . . . . . . . . . . . 385
+* 30.2.3 ステージング環境をメンテナンスする . . . . . . . . . . . . . . . . . . . . . . . . 385
+* 30.2.4 何がおこってもいいようにバックアップとロールバックできるようにする . . . . . . . . . . . . . 385
+* 30.2.5 別の場所にバックアップをとる . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
 * 30.3 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
-* 31 Deploying Django Projects 387
-* 31.1 Single-Server for Small Projects . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
-* 31.1.1 Should You Bother? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
-* 31.1.2 Example: Quick Ubuntu + Gunicorn Setup . . . . . . . . . . . . . . . . 388
-* 31.2 Multi-Server for Medium to Large Projects . . . . . . . . . . . . . . . . . . . . 389
-* 31.2.1 Advanced Multi-Server Setup . . . . . . . . . . . . . . . . . . . . . . . 392
-* 31.3 WSGI Application Servers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393
-* 31.4 Performance and Tuning: uWSGI and Gunicorn . . . . . . . . . . . . . . . . . . 394
-* 31.5 Stability and Ease of Setup: Gunicorn and Apache . . . . . . . . . . . . . . . . . 395
-* 31.6 Common Apache Gotchas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 395
-* 31.6.1 Apache and Environment Variables . . . . . . . . . . . . . . . . . . . . . 395
-* 31.6.2 Apache and Virtualenv . . . . . . . . . . . . . . . . . . . . . . . . . . . 396
-* 31.7 Automated, Repeatable Deployments . . . . . . . . . . . . . . . . . . . . . . . . 396
-* 31.7.1 A Rapidly Changing World . . . . . . . . . . . . . . . . . . . . . . . . . 398
-* 31.8 Which Automation Tool Should Be Used? . . . . . . . . . . . . . . . . . . . . . 399
-* 31.8.1 Too Much Corporate Fluff . . . . . . . . . . . . . . . . . . . . . . . . . 399
-* 31.8.2 Do Your Own Research . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
-* 31.9 Current Infrastructure Automation Tools . . . . . . . . . . . . . . . . . . . . . . 400
+* 31 Djangoプロジェクトをデプロイする 387
+* 31.1 小さなプロジェクト向けシングルサーバプラン . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+* 31.1.1 なにかやるべきか? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387
+* 31.1.2 例: Ubuntu + Gunicornクイックセットアップ . . . . . . . . . . . . . . . . 388
+* 31.2 中規模から大規模プロジェクト向けマルチサーバプラン . . . . . . . . . . . . . . . . . . . . 389
+* 31.2.1 発展的なマルチサーバセットアップ . . . . . . . . . . . . . . . . . . . . . . . 392
+* 31.3 WSGIアプリケーションサーバたち . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393
+* 31.4 パフォーマンスとチューニング: uWSGIとGunicorn . . . . . . . . . . . . . . . . . . 394
+* 31.5 安定性と使いやすさ: GunicornとApache . . . . . . . . . . . . . . . . . 395
+* 31.6 Apacheのあるある . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 395
+* 31.6.1 Apacheと環境変数 . . . . . . . . . . . . . . . . . . . . . 395
+* 31.6.2 ApacheとVirtualenv . . . . . . . . . . . . . . . . . . . . . . . . . . . 396
+* 31.7 自動化された繰り返せるデプロイ . . . . . . . . . . . . . . . . . . . . . . . . 396
+* 31.7.1 世界は変わる とーっても早く . . . . . . . . . . . . . . . . . . . . . . . . . 398
+* 31.8 どの自動化ツールを使うべきか? . . . . . . . . . . . . . . . . . . . . . 399
+* 31.8.1 企業間競争 . . . . . . . . . . . . . . . . . . . . . . . . . 399
+* 31.8.2 自分で調べよう . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+* 31.9 現在使われているインフラ自動化ツール . . . . . . . . . . . . . . . . . . . . . . 400
 * 31.10 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
 * 31.11 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 403
 * 32 継続インテグレーション 405
