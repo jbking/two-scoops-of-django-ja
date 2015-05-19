@@ -19,10 +19,10 @@ Why Two Scoops of Django? . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 Before You Begin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxi
 This book is intended for Django 1.8 and Python 2.7.x/3.3.3+ . . . . . . . . . . . . xxxi
 Each Chapter Stands On Its Own . . . . . . . . . . . . . . . . . . . . . . . . . . xxxi
-Conventions Used in 􀄻is Book . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxii
+Conventions Used in This Book . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxii
 Core Concepts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxiii
 Keep It Simple, Stupid . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxiii
-Fat Models, Helper Modules, 􀄻in Views, Stupid Templates . . . . . . . . . . . . xxxiv
+Fat Models, Helper Modules, Thin Views, Stupid Templates . . . . . . . . . . . . xxxiv
 Start With Django By Default . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxiv
 Be Familiar with Django’s Design Philosophies . . . . . . . . . . . . . . . . . . . xxxiv
 The Twelve Factor App . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxxv
@@ -34,8 +34,8 @@ Publish Errata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 1 Coding Style 1
 1.1 The Importance of Making Your Code Readable . . . . . . . . . . . . . . . . . . 1
 1.2 PEP 8 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-1.2.1 􀄻e 79 Character Limit . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1.3 􀄻e Word on Imports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.2.1 The 79 Character Limit . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.3 The Word on Imports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 1.4 Use Explicit Relative Imports . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
 1.5 Avoid Using Import * . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
 1.6 Consider the Django Coding Style Guidelines . . . . . . . . . . . . . . . . . . . 9
@@ -44,7 +44,7 @@ Publish Errata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 1.7.2 HTML and CSS Style Guides . . . . . . . . . . . . . . . . . . . . . . . 10
 1.8 Never Code to the IDE (Or Text Editor) . . . . . . . . . . . . . . . . . . . . . . 10
 1.9 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
-2 􀄻e Optimal Django Environment Setup 13
+2 The Optimal Django Environment Setup 13
 2.1 Use the Same Database Engine Everywhere . . . . . . . . . . . . . . . . . . . . 13
 2.1.1 Fixtures Are Not a Magic Solution . . . . . . . . . . . . . . . . . . . . . 13
 2.1.2 You Can’t Examine an Exact Copy of Production Data Locally . . . . . . 14
@@ -59,14 +59,14 @@ Publish Errata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 3.1 Django 1.8’s Default Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . 21
 3.2 Our Preferred Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
 3.2.1 Top Level: Repository Root . . . . . . . . . . . . . . . . . . . . . . . . . 23
-3.2.2 􀄻ird Level: Con􀅀guration Root . . . . . . . . . . . . . . . . . . . . . . 23
+3.2.2 Third Level: Configuration Root . . . . . . . . . . . . . . . . . . . . . . 23
 3.3 Sample Project Layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 3.4 What About the Virtualenv? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 3.5 Using a Cookiecutter Template to Generate Our Layout . . . . . . . . . . . . . . 28
 3.6 Other Alternatives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 3.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 4 Fundamentals of Django App Design 31
-4.1 􀄻e Golden Rule of Django App Design . . . . . . . . . . . . . . . . . . . . . . 32
+4.1 The Golden Rule of Django App Design . . . . . . . . . . . . . . . . . . . . . . 32
 4.1.1 A Practical Example of Apps in a Project . . . . . . . . . . . . . . . . . . 33
 4.2 What to Name Your Django Apps . . . . . . . . . . . . . . . . . . . . . . . . . 34
 4.3 When in Doubt, Keep Apps Small . . . . . . . . . . . . . . . . . . . . . . . . . 35
@@ -79,14 +79,14 @@ Publish Errata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 5.2 Using Multiple Settings Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
 5.2.1 A Development Settings Example . . . . . . . . . . . . . . . . . . . . . 44
 5.2.2 Multiple Development Settings . . . . . . . . . . . . . . . . . . . . . . . 45
-5.3 Separate Con􀅀guration From Code . . . . . . . . . . . . . . . . . . . . . . . . . 46
+5.3 Separate Configuration From Code . . . . . . . . . . . . . . . . . . . . . . . . . 46
 5.3.1 A Caution Before Using Environment Variables for Secrets . . . . . . . . 47
 5.3.2 How to Set Environment Variables Locally . . . . . . . . . . . . . . . . 47
 5.3.3 How to Set Environment Variables in Production . . . . . . . . . . . . . 49
 5.3.4 Handling Missing Secret Key Exceptions . . . . . . . . . . . . . . . . . 50
 5.4 When You Can’t Use Environment Variables . . . . . . . . . . . . . . . . . . . . 52
 5.4.1 Using JSON Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
-5.4.2 Using Con􀅀g, YAML, and XML File Formats . . . . . . . . . . . . . . 53
+5.4.2 Using Config, YAML, and XML File Formats . . . . . . . . . . . . . . 53
 5.5 Using Multiple Requirements Files . . . . . . . . . . . . . . . . . . . . . . . . . 53
 5.5.1 Installing From Multiple Requirements Files . . . . . . . . . . . . . . . . 55
 5.5.2 Using Multiple Requirements Files With Platforms as a
@@ -97,7 +97,7 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 6.1 Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
 6.1.1 Break Up Apps With Too Many Models . . . . . . . . . . . . . . . . . . 62
 6.1.2 Be Careful With Model Inheritance . . . . . . . . . . . . . . . . . . . . 62
-6.1.3 Model Inheritance in Practice: 􀄻e TimeStampedModel . . . . . . . . . 64
+6.1.3 Model Inheritance in Practice: The TimeStampedModel . . . . . . . . . 64
 6.1.4 Database Migrations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
 6.2 Django Model Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
 6.2.1 Start Normalized . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
@@ -106,8 +106,8 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 6.2.4 When to Use Null and Blank . . . . . . . . . . . . . . . . . . . . . . . . 68
 6.2.5 When to Use BinaryField . . . . . . . . . . . . . . . . . . . . . . . . . . 70
 6.2.6 Try to Avoid Using Generic Relations . . . . . . . . . . . . . . . . . . . 71
-6.2.7 PostgreSQL-Speci􀅀c Fields: When to Use Null and Blank . . . . . . . . 72
-6.3 􀄻e Model meta API . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+6.2.7 PostgreSQL-Specific Fields: When to Use Null and Blank . . . . . . . . 72
+6.3 The Model meta API . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
 6.4 Model Managers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
 6.5 Understanding Fat Models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
 6.5.1 Model Behaviors a.k.a Mixins . . . . . . . . . . . . . . . . . . . . . . . 76
@@ -116,9 +116,9 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 6.6 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
 7 Queries and the Database Layer 79
 7.1 Use get object or 404() for Single Objects . . . . . . . . . . . . . . . . . . . . . 79
-7.2 Be Careful With Queries 􀄻at Might 􀄻row Exceptions . . . . . . . . . . . . . . 80
+7.2 Be Careful With Queries That Might Throw Exceptions . . . . . . . . . . . . . . 80
 7.2.1 ObjectDoesNotExist vs. DoesNotExist . . . . . . . . . . . . . . . . . . 80
-7.2.2 When You Just Want One Object but Get 􀄻ree Back . . . . . . . . . . 81
+7.2.2 When You Just Want One Object but Get Three Back . . . . . . . . . . 81
 7.3 Use Lazy Evaluation to Make Queries Legible . . . . . . . . . . . . . . . . . . . 81
 7.4 Lean on Advanced Query Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
 7.4.1 Query Expressions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
@@ -139,13 +139,13 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 8.3.1 What if We Aren’t Using CBVs? . . . . . . . . . . . . . . . . . . . . . . 99
 8.4 Use URL Namespaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
 8.4.1 Makes for Shorter, More Obvious and Don’t Repeat Yourself URL Names 100
-8.4.2 Increases Interoperability With 􀄻ird-Party Libraries . . . . . . . . . . . 101
+8.4.2 Increases Interoperability With Third-Party Libraries . . . . . . . . . . . 101
 8.4.3 Easier Searches, Upgrades, and Refactors . . . . . . . . . . . . . . . . . 102
 8.4.4 Allows for More App and Template Reverse Tricks . . . . . . . . . . . . 102
 8.5 Don’t Reference Views as Strings in URLConfs . . . . . . . . . . . . . . . . . . 102
 8.6 Try to Keep Business Logic Out of Views . . . . . . . . . . . . . . . . . . . . . 103
 8.7 Django Views Are Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
-8.7.1 􀄻e Simplest Views . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+8.7.1 The Simplest Views . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
 8.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
 9 Best Practices for Function-Based Views 107
 9.1 Advantages of FBVs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
@@ -173,11 +173,11 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 11 Form Fundamentals 135
 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
 11.2 Use the POST Method in HTML Forms . . . . . . . . . . . . . . . . . . . . . 138
-11.3 Always Use CSRF Protection With HTTP Forms 􀄻at Modify Data . . . . . . . 138
+11.3 Always Use CSRF Protection With HTTP Forms That Modify Data . . . . . . . 138
 11.3.1 Posting Data via AJAX . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
 11.4 Understand How to Add Django Form Instance Attributes . . . . . . . . . . . . 139
 11.5 Know How Form Validation Works . . . . . . . . . . . . . . . . . . . . . . . . . 141
-11.5.1 ModelForm Data Is Saved to the Form, 􀄻en the Model Instance . . . . 142
+11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 11.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
@@ -193,7 +193,7 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
 13.2.1 2-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 164
 13.2.2 3-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 165
-13.2.3 Flat Is Better 􀄻an Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
+13.2.3 Flat Is Better Than Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
 13.3 Limit Processing in Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
 13.3.1 Gotcha 1: Aggregation in Templates . . . . . . . . . . . . . . . . . . . . 169
 13.3.2 Gotcha 2: Filtering With Conditionals in Templates . . . . . . . . . . . 171
@@ -206,11 +206,11 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 11 Form Fundamentals 135
 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
 11.2 Use the POST Method in HTML Forms . . . . . . . . . . . . . . . . . . . . . 138
-11.3 Always Use CSRF Protection With HTTP Forms 􀄻at Modify Data . . . . . . . 138
+11.3 Always Use CSRF Protection With HTTP Forms That Modify Data . . . . . . . 138
 11.3.1 Posting Data via AJAX . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
 11.4 Understand How to Add Django Form Instance Attributes . . . . . . . . . . . . 139
 11.5 Know How Form Validation Works . . . . . . . . . . . . . . . . . . . . . . . . . 141
-11.5.1 ModelForm Data Is Saved to the Form, 􀄻en the Model Instance . . . . 142
+11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 11.8 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
@@ -226,7 +226,7 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
 13.2.1 2-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 164
 13.2.2 3-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 165
-13.2.3 Flat Is Better 􀄻an Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
+13.2.3 Flat Is Better Than Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
 13.3 Limit Processing in Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
 13.3.1 Gotcha 1: Aggregation in Templates . . . . . . . . . . . . . . . . . . . . 169
 13.3.2 Gotcha 2: Filtering With Conditionals in Templates . . . . . . . . . . . 171
@@ -237,7 +237,7 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 15.3.2 Using Template Tags in Jinja2 Templates . . . . . . . . . . . . . . . . . 196
 15.3.3 Using Django-Style Template Filters in Jinja2 Templates . . . . . . . . . 196
 15.3.4 Context Processors Aren’t Called by Jinja2 Templates . . . . . . . . . . . 198
-15.3.5 􀄻e Jinja2 Environment Object Should Be Considered Static . . . . . . . 200
+15.3.5 The Jinja2 Environment Object Should Be Considered Static . . . . . . . 200
 15.4 Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
 15.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
 16 Building REST APIs 203
@@ -296,7 +296,7 @@ Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
 17.9 Useful Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
 17.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
 18 Tradeoffs of Replacing Core Components 233
-18.1 􀄻e Temptation to Build FrankenDjango . . . . . . . . . . . . . . . . . . . . . . 234
+18.1 The Temptation to Build FrankenDjango . . . . . . . . . . . . . . . . . . . . . . 234
 18.2 Non-Relational Databases vs. Relational
 Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
 18.2.1 Not All Non-Relational Databases Are ACID Compliant . . . . . . . . . 235
@@ -327,19 +327,19 @@ Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 20.3.2 Option 2: Subclass AbstractBaseUser . . . . . . . . . . . . . . . . . . . . 255
 20.3.3 Option 3: Linking Back From a Related Model . . . . . . . . . . . . . . 255
 20.4 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257
-21 Django’s Secret Sauce: 􀄻ird-Party Packages 259
-21.1 Examples of 􀄻ird-Party Packages . . . . . . . . . . . . . . . . . . . . . . . . . 260
+21 Django’s Secret Sauce: Third-Party Packages 259
+21.1 Examples of Third-Party Packages . . . . . . . . . . . . . . . . . . . . . . . . . 260
 21.2 Know About the Python Package Index . . . . . . . . . . . . . . . . . . . . . . 260
 21.3 Know About DjangoPackages.com . . . . . . . . . . . . . . . . . . . . . . . . . 261
 21.4 Know Your Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 261
 21.5 Tools for Installing and Managing Packages . . . . . . . . . . . . . . . . . . . . 261
 21.6 Package Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
-21.7 Wiring Up Django Packages: 􀄻e Basics . . . . . . . . . . . . . . . . . . . . . . 262
+21.7 Wiring Up Django Packages: The Basics . . . . . . . . . . . . . . . . . . . . . . 262
 21.7.1 Step 1: Read the Documentation for the Package . . . . . . . . . . . . . 262
 21.7.2 Step 2: Add Package and Version Number to Your Requirements . . . . . 262
 21.7.3 Step 3: Install the Requirements Into Your Virtualenv . . . . . . . . . . . 263
 21.7.4 Step 4: Follow the Package’s Installation Instructions Exactly . . . . . . . 264
-21.8 Troubleshooting 􀄻ird-Party Packages . . . . . . . . . . . . . . . . . . . . . . . 264
+21.8 Troubleshooting Third-Party Packages . . . . . . . . . . . . . . . . . . . . . . . 264
 21.9 Releasing Your Own Django Packages . . . . . . . . . . . . . . . . . . . . . . . 264
 21.10 What Makes a Good Django Package? . . . . . . . . . . . . . . . . . . . . . . . 265
 21.10.1 Purpose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 265
@@ -351,7 +351,7 @@ Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 21.10.7 Community . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
 21.10.8 Modularity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
 21.10.9 Availability on PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
-21.10.10 Uses the Broadest Requirements Speci􀅀ers Possible . . . . . . . . . . . . 268
+21.10.10 Uses the Broadest Requirements Specifiers Possible . . . . . . . . . . . . 268
 21.10.11 Proper Version Numbers . . . . . . . . . . . . . . . . . . . . . . . . . . 269
 21.10.12 Name . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270
 21.10.13 License . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 271
@@ -373,12 +373,12 @@ Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 22.1 Testing Saves Money, Jobs, and Lives . . . . . . . . . . . . . . . . . . . . . . . . 279
 22.2 How to Structure Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 280
 22.3 How to Write Unit Tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 281
-22.3.1 Each Test Method Tests One 􀄻ing . . . . . . . . . . . . . . . . . . . . 281
+22.3.1 Each Test Method Tests One Thing . . . . . . . . . . . . . . . . . . . . 281
 22.3.2 For Views, When Possible Use the Request Factory . . . . . . . . . . . . 284
-22.3.3 Don’t Write Tests 􀄻at Have to Be Tested . . . . . . . . . . . . . . . . . 285
+22.3.3 Don’t Write Tests That Have to Be Tested . . . . . . . . . . . . . . . . . 285
 22.3.4 Don’t Repeat Yourself Doesn’t Apply to Writing Tests . . . . . . . . . . . 285
 22.3.5 Don’t Rely on Fixtures . . . . . . . . . . . . . . . . . . . . . . . . . . . 286
-22.3.6 􀄻ings 􀄻at Should Be Tested . . . . . . . . . . . . . . . . . . . . . . . 286
+22.3.6 Things That Should Be Tested . . . . . . . . . . . . . . . . . . . . . . . 286
 22.3.7 Test for Failure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 287
 22.3.8 Use Mock to Keep Unit Tests From Touching the World . . . . . . . . . 288
 22.3.9 Use Fancier Assertion Methods . . . . . . . . . . . . . . . . . . . . . . . 290
@@ -386,7 +386,7 @@ Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 22.4 What About Integration Tests? . . . . . . . . . . . . . . . . . . . . . . . . . . . 291
 22.5 Continuous Integration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 292
 22.6 Who Cares? We Don’t Have Time for Tests! . . . . . . . . . . . . . . . . . . . . 292
-22.7 􀄻e Game of Test Coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 293
+22.7 The Game of Test Coverage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 293
 22.8 Setting Up the Test Coverage Game . . . . . . . . . . . . . . . . . . . . . . . . 293
 22.8.1 Step 1: Start Writing Tests . . . . . . . . . . . . . . . . . . . . . . . . . 293
 22.8.2 Step 2: Run Tests and Generate Coverage Report . . . . . . . . . . . . . 294
@@ -399,7 +399,7 @@ Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 23.2 Use Sphinx to Generate Documentation From reStructuredText . . . . . . . . . . 299
 23.3 What Docs Should Django Projects Contain? . . . . . . . . . . . . . . . . . . . 299
 23.4 Additional Documentation Resources . . . . . . . . . . . . . . . . . . . . . . . . 301
-23.5 􀄻e Markdown Alternative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301
+23.5 The Markdown Alternative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301
 23.5.1 README.md to README.rst: Using Pandoc for Packages Uploaded to
 PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 23.5.2 Markdown Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
@@ -417,9 +417,9 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 24.3.2 Getting the Most Out of PostgreSQL . . . . . . . . . . . . . . . . . . . 309
 24.3.3 Getting the Most Out of MySQL . . . . . . . . . . . . . . . . . . . . . 309
 24.4 Cache Queries With Memcached or Redis . . . . . . . . . . . . . . . . . . . . . 310
-24.5 Identify Speci􀅀c Places to Cache . . . . . . . . . . . . . . . . . . . . . . . . . . 310
-24.6 Consider 􀄻ird-Party Caching Packages . . . . . . . . . . . . . . . . . . . . . . 310
-24.7 Compression and Mini􀅀cation of HTML, CSS, and JavaScript . . . . . . . . . . 311
+24.5 Identify Specific Places to Cache . . . . . . . . . . . . . . . . . . . . . . . . . . 310
+24.6 Consider Third-Party Caching Packages . . . . . . . . . . . . . . . . . . . . . . 310
+24.7 Compression and Minification of HTML, CSS, and JavaScript . . . . . . . . . . 311
 24.8 Use Upstream Caching or a Content Delivery Network . . . . . . . . . . . . . . 312
 24.9 Other Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312
 24.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
@@ -448,18 +448,18 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 26.5 HTTPS Everywhere . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 324
 26.5.1 Use Secure Cookies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 326
 26.5.2 Use HTTP Strict Transport Security (HSTS) . . . . . . . . . . . . . . . 326
-26.5.3 HTTPS Con􀅀guration Tools . . . . . . . . . . . . . . . . . . . . . . . . 328
+26.5.3 HTTPS Configuration Tools . . . . . . . . . . . . . . . . . . . . . . . . 328
 26.6 Use Allowed Hosts Validation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328
-26.7 Always Use CSRF Protection With HTTP Forms 􀄻at Modify Data . . . . . . . 328
+26.7 Always Use CSRF Protection With HTTP Forms That Modify Data . . . . . . . 328
 26.8 Prevent Against Cross-Site Scripting (XSS) Attacks . . . . . . . . . . . . . . . . 328
 26.8.1 Use Django Templates Over mark safe . . . . . . . . . . . . . . . . . . . 329
 26.8.2 Don’t Allow Users to Set Individual HTML Tag Attributes . . . . . . . . 329
 26.8.3 Use JSON Encoding for Data Consumed by JavaScript . . . . . . . . . . 329
 26.8.4 Additional Reading . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 329
 26.9 Defend Against Python Code Injection Attacks . . . . . . . . . . . . . . . . . . 329
-26.9.1 Python Built-Ins 􀄻at Execute Code . . . . . . . . . . . . . . . . . . . . 330
-26.9.2 Python Standard Library Modules 􀄻at Can Execute Code . . . . . . . . 330
-26.9.3 􀄻ird-Party Libraries 􀄻at Can Execute Code . . . . . . . . . . . . . . . 330
+26.9.1 Python Built-Ins That Execute Code . . . . . . . . . . . . . . . . . . . . 330
+26.9.2 Python Standard Library Modules That Can Execute Code . . . . . . . . 330
+26.9.3 Third-Party Libraries That Can Execute Code . . . . . . . . . . . . . . . 330
 26.9.4 Be Careful With Cookie-Based Sessions . . . . . . . . . . . . . . . . . . 331
 26.10 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 332
 26.11 Disable the Autocomplete on Payment Fields . . . . . . . . . . . . . . . . . . . 332
@@ -488,7 +488,7 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 26.26 Give Your Site a Security Checkup . . . . . . . . . . . . . . . . . . . . . . . . . 343
 26.27 Put Up a Vulnerability Reporting Page . . . . . . . . . . . . . . . . . . . . . . . 344
 26.28 Stop Using django.utils.html.remove tag . . . . . . . . . . . . . . . . . . . . . . 344
-26.29 Have a Plan Ready for When 􀄻ings Go Wrong . . . . . . . . . . . . . . . . . . 344
+26.29 Have a Plan Ready for When Things Go Wrong . . . . . . . . . . . . . . . . . . 344
 26.29.1 Shut Everything Down or Put It in Read-Only Mode . . . . . . . . . . . 345
 26.29.2 Put Up a Static HTML Page . . . . . . . . . . . . . . . . . . . . . . . . 345
 26.29.3 Back Everything Up . . . . . . . . . . . . . . . . . . . . . . . . . . . . 345
@@ -506,11 +506,11 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 27.3.4 Log Useful State Information With INFO . . . . . . . . . . . . . . . . . 353
 27.3.5 Log Debug-Related Messages to DEBUG . . . . . . . . . . . . . . . . . 353
 27.4 Log Tracebacks When Catching Exceptions . . . . . . . . . . . . . . . . . . . . 355
-27.5 One Logger Per Module 􀄻at Uses Logging . . . . . . . . . . . . . . . . . . . . 356
+27.5 One Logger Per Module That Uses Logging . . . . . . . . . . . . . . . . . . . . 356
 27.6 Log Locally to Rotating Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . 356
 27.7 Other Logging Tips . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357
 27.8 Necessary Reading Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357
-27.9 Useful 􀄻ird-Party Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
+27.9 Useful Third-Party Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
 27.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
 28 Signals: Use Cases and Avoidance Techniques 359
 28.1 When to Use and Avoid Signals . . . . . . . . . . . . . . . . . . . . . . . . . . 359
@@ -520,7 +520,7 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 28.2.3 Override Your Model’s Save or Delete Method Instead . . . . . . . . . . 363
 28.2.4 Use a Helper Function Instead of Signals . . ... ..  .. ..  .  ... . . . . . 364
 28.3 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364
-29 What About 􀄻ose Random Utilities? 365
+29 What About Those Random Utilities? 365
 29.1 Create a Core App for Your Utilities . . . . . . . . . . . . . . . . . . . . . . . . 365
 29.2 Django’s Own Swiss Army Knife . . . . . . . . . . . . . . . . . . . . . . . . . . 366
 29.2.1 django.contrib.humanize . . . . . . . . . . . . . . . . . . . . . . . . . . 367
@@ -536,7 +536,7 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 29.2.11 django.utils.timezone . . . . . . . . . . . . . . . . . . . . . . . . . . . . 371
 29.2.12 django.utils.translation . . . . . . . . . . . . . . . . . . . . . . . . . . . 372
 29.3 Exceptions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 372
-29.3.1 django.core.exceptions.ImproperlyCon􀅀gured . . . . . . . . . . . . . . . 372
+29.3.1 django.core.exceptions.ImproperlyConfigured . . . . . . . . . . . . . . . 372
 29.3.2 django.core.exceptions.ObjectDoesNotExist . . . . . . . . . . . . . . . . 372
 29.3.3 django.core.exceptions.PermissionDenied . . . . . . . . . . . . . . . . . 373
 29.4 Serializers and Deserializers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 374
@@ -557,7 +557,7 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 30.1.9 Company Stability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384
 30.2 Best Practices for Deploying to PaaS . . . . . . . . . . . . . . . . . . . . . . . . 384
 30.2.1 Aim for Identical Environments . . . . . . . . . . . . . . . . . . . . . . 384
-30.2.2 Automate All the 􀄻ings! . . . . . . . . . . . . . . . . . . . . . . . . . . 385
+30.2.2 Automate All the Things! . . . . . . . . . . . . . . . . . . . . . . . . . . 385
 30.2.3 Maintain a Staging Instance . . . . . . . . . . . . . . . . . . . . . . . . 385
 30.2.4 Prepare for Disaster With Backups and Rollbacks . . . . . . . . . . . . . 385
 30.2.5 Keep External Backups . . . . . . . . . . . . . . . . . . . . . . . . . . . 386
@@ -593,10 +593,10 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 32.3.1 Code Coverage as a Service . . . . . . . . . . . . . . . . . . . . . . . . . 409
 32.4 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
 32.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
-33 􀄻e Art of Debugging 411
+33 The Art of Debugging 411
 33.1 Debugging in Development . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
 33.1.1 Use django-debug-toolbar . . . . . . . . . . . . . . . . . . . . . . . . . 411
-33.1.2 􀄻at Annoying CBV Error . . . . . . . . . . . . . . . . . . . . . . . . . 411
+33.1.2 That Annoying CBV Error . . . . . . . . . . . . . . . . . . . . . . . . . 411
 33.1.3 Master the Python Debugger . . . . . . . . . . . . . . . . . . . . . . . . 413
 33.1.4 Remember the Essentials for Form File Uploads . . . . . . . . . . . . . . 413
 33.1.5 Lean on the Text Editor or IDE . . . . . . . . . . . . . . . . . . . . . . 416
@@ -604,7 +604,7 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 33.2.1 Read the Logs the Easy Way . . . . . . . . . . . . . . . . . . . . . . . . 416
 33.2.2 Mirroring Production . . . . . . . . . . . . . . . . . . . . . . . . . . . . 417
 33.2.3 UserBasedExceptionMiddleware . . . . . . . . . . . . . . . . . . . . . . 417
-33.2.4 􀄻at Troublesome settings.ALLOWED HOSTS Error . . . . . . . . . . . 418
+33.2.4 That Troublesome settings.ALLOWED HOSTS Error . . . . . . . . . . . 418
 33.3 Feature Flags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 419
 33.3.1 Feature Flag Packages . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
 33.3.2 Unit Testing Code Affected by Feature Flags . . . . . . . . . . . . . . . 420
@@ -616,8 +616,8 @@ PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 34.4 Insider Tip: Be Active in the Community . . . . . . . . . . . . . . . . . . . . . 422
 34.4.1 9 Easy Ways to Participate . . . . . . . . . . . . . . . . . . . . . . . . . 423
 34.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
-35 Closing 􀄻oughts 425
-Appendix A: Packages Mentioned In 􀄻is Book 427
+35 Closing Thoughts 425
+Appendix A: Packages Mentioned In This Book 427
 Appendix B: Troubleshooting Installation 435
 Identifying the Issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 435
 Our Recommended Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
