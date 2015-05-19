@@ -89,8 +89,7 @@ Contents:
 * 5.4.2 Using Config, YAML, and XML File Formats . . . . . . . . . . . . . . 53
 * 5.5 Using Multiple Requirements Files . . . . . . . . . . . . . . . . . . . . . . . . . 53
 * 5.5.1 Installing From Multiple Requirements Files . . . . . . . . . . . . . . . . 55
-* 5.5.2 Using Multiple Requirements Files With Platforms as a
-* Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+* 5.5.2 Using Multiple Requirements Files With Platforms as a Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
 * 5.6 Handling File Paths in Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
 * 5.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
 * 6 Model Best Practices 61
@@ -297,8 +296,7 @@ Contents:
 * 17.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
 * 18 Tradeoffs of Replacing Core Components 233
 * 18.1 The Temptation to Build FrankenDjango . . . . . . . . . . . . . . . . . . . . . . 234
-* 18.2 Non-Relational Databases vs. Relational
-* Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+* 18.2 Non-Relational Databases vs. Relational Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
 * 18.2.1 Not All Non-Relational Databases Are ACID Compliant . . . . . . . . . 235
 * 18.2.2 Don’t Use Non-Relational Databases for Relational Tasks . . . . . . . . . 236
 * 18.2.3 Ignore the Hype and Do Your Own Research . . . . . . . . . . . . . . . 236
@@ -400,8 +398,7 @@ Contents:
 * 23.3 What Docs Should Django Projects Contain? . . . . . . . . . . . . . . . . . . . 299
 * 23.4 Additional Documentation Resources . . . . . . . . . . . . . . . . . . . . . . . . 301
 * 23.5 The Markdown Alternative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301
-* 23.5.1 README.md to README.rst: Using Pandoc for Packages Uploaded to
-* PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
+* 23.5.1 README.md to README.rst: Using Pandoc for Packages Uploaded to PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 * 23.5.2 Markdown Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 * 23.6 Wikis and Other Documentation Methods . . . . . . . . . . . . . . . . . . . . . 303
 * 23.7 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
