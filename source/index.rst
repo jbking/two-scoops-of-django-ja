@@ -129,7 +129,7 @@ Contents:
 * 7.7.2 Explicit Transaction Declaration . . . . . . . . . . . . . . . . . . . . . . 90
 * 7.7.3 django.http.StreamingHttpResponse and Transactions . . . . . . . . . . 91
 * 7.7.4 Transactions in MySQL . . . . . . . . . . . . . . . . . . . . . . . . . . 92
-* 7.7.5 Django ORM Transaction Resources . . . . . . . . . . . . . . . . . . . . 92
+* 7.7.5 Django ORMトランザクションについての参考情報 . . . . . . . . . . . . . . . . . . . . 92
 * 7.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
 * 8 Function- and Class-Based Views 93
 * 8.1 When to Use FBVs or CBVs . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
@@ -151,7 +151,7 @@ Contents:
 * 9.2 Passing the HttpRequest Object . . . . . . . . . . . . . . . . . . . . . . . . . . 108
 * 9.3 Decorators Are Sweet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
 * 9.3.1 Be Conservative With Decorators . . . . . . . . . . . . . . . . . . . . . 113
-* 9.3.2 Additional Resources on Decorators . . . . . . . . . . . . . . . . . . . . 114
+* 9.3.2 デコレータについての参考情報 . . . . . . . . . . . . . . . . . . . . 114
 * 9.4 Passing the HttpResponse Object . . . . . . . . . . . . . . . . . . . . . . . . . . 114
 * 9.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
 * 10 Best Practices for Class-Based Views 115
@@ -167,7 +167,7 @@ Contents:
 * 10.5.1 Views + ModelForm Example . . . . . . . . . . . . . . . . . . . . . . . 125
 * 10.5.2 Views + Form Example . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
 * 10.6 Using Just django.views.generic.View . . . . . . . . . . . . . . . . . . . . . . . . 131
-* 10.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+* 10.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
 * 10.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
 * 11 Form Fundamentals 135
 * 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
@@ -178,7 +178,7 @@ Contents:
 * 11.5 Know How Form Validation Works . . . . . . . . . . . . . . . . . . . . . . . . . 141
 * 11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 * 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+* 11.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 11.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 12 Common Patterns for Forms 145
 * 12.1 Pattern 1: Simple ModelForm With Default Validators . . . . . . . . . . . . . . 146
@@ -200,7 +200,7 @@ Contents:
 * 13.3.4 Gotcha 4: Hidden CPU Load in Templates . . . . . . . . . . . . . . . . 174
 * 13.3.5 Gotcha 5: Hidden REST API Calls in Templates . . . . . . . . . . . . . 175
 * 13.4 Don’t Bother Making Your Generated HTML Pretty . . . . . . . . . . . . . . . 175
-* 10.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+* 10.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
 * 10.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
 * 11 Form Fundamentals 135
 * 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
@@ -211,7 +211,7 @@ Contents:
 * 11.5 Know How Form Validation Works . . . . . . . . . . . . . . . . . . . . . . . . . 141
 * 11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
 * 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.7 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+* 11.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 11.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 * 12 Common Patterns for Forms 145
 * 12.1 Pattern 1: Simple ModelForm With Default Validators . . . . . . . . . . . . . . 146
@@ -237,7 +237,7 @@ Contents:
 * 15.3.3 Using Django-Style Template Filters in Jinja2 Templates . . . . . . . . . 196
 * 15.3.4 Context Processors Aren’t Called by Jinja2 Templates . . . . . . . . . . . 198
 * 15.3.5 The Jinja2 Environment Object Should Be Considered Static . . . . . . . 200
-* 15.4 Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+* 15.4 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
 * 15.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
 * 16 Building REST APIs 203
 * 16.1 Fundamentals of Basic REST API Design . . . . . . . . . . . . . . . . . . . . . 204
@@ -292,7 +292,7 @@ Contents:
 * 17.7.1 Assessing Skill Levels . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
 * 17.7.2 Learn More JavaScript! . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
 * 17.8 Follow JavaScript Coding Standards . . . . . . . . . . . . . . . . . . . . . . . . 231
-* 17.9 Useful Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+* 17.9 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
 * 17.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
 * 18 Tradeoffs of Replacing Core Components 233
 * 18.1 The Temptation to Build FrankenDjango . . . . . . . . . . . . . . . . . . . . . . 234
@@ -396,10 +396,10 @@ Contents:
 * 23.1 Use reStructuredText for Python Docs . . . . . . . . . . . . . . . . . . . . . . . 297
 * 23.2 Use Sphinx to Generate Documentation From reStructuredText . . . . . . . . . . 299
 * 23.3 What Docs Should Django Projects Contain? . . . . . . . . . . . . . . . . . . . 299
-* 23.4 Additional Documentation Resources . . . . . . . . . . . . . . . . . . . . . . . . 301
+* 23.4 ドキュメンテーションについての参考情報 . . . . . . . . . . . . . . . . . . . . . . . . 301
 * 23.5 The Markdown Alternative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301
 * 23.5.1 README.md to README.rst: Using Pandoc for Packages Uploaded to PyPI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
-* 23.5.2 Markdown Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
+* 23.5.2 Markdownについての参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302
 * 23.6 Wikis and Other Documentation Methods . . . . . . . . . . . . . . . . . . . . . 303
 * 23.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
 * 24 Finding and Reducing Bottlenecks 305
@@ -418,7 +418,7 @@ Contents:
 * 24.6 Consider Third-Party Caching Packages . . . . . . . . . . . . . . . . . . . . . . 310
 * 24.7 Compression and Minification of HTML, CSS, and JavaScript . . . . . . . . . . 311
 * 24.8 Use Upstream Caching or a Content Delivery Network . . . . . . . . . . . . . . 312
-* 24.9 Other Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312
+* 24.9 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312
 * 24.10 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
 * 25 Asynchronous Task Queues 315
 * 25.1 Do We Need a Task Queue? . . . . . . . . . . . . . . . . . . . . . . . . . . . . 316
@@ -435,7 +435,7 @@ Contents:
 * 25.3.9 Use the Queue’s Error Handling . . . . . . . . . . . . . . . . . . . . . . 320
 * 25.3.10 All Tasks Should Accept Kwargs . . . . . . . . . . . . . . . . . . . . . . 321
 * 25.3.11 Learn the Features of Your Task Queue Software . . . . . . . . . . . . . 321
-* 25.4 Resources for Task Queues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 321
+* 25.4 Task Queueについての参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 321
 * 25.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
 * 26 Security Best Practices 323
 * 26.1 Harden Your Servers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 323
@@ -577,7 +577,7 @@ Contents:
 * 31.8.1 Too Much Corporate Fluff . . . . . . . . . . . . . . . . . . . . . . . . . 399
 * 31.8.2 Do Your Own Research . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
 * 31.9 Current Infrastructure Automation Tools . . . . . . . . . . . . . . . . . . . . . . 400
-* 31.10 Other Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+* 31.10 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
 * 31.11 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 403
 * 32 Continuous Integration 405
 * 32.1 Principles of Continuous Integration . . . . . . . . . . . . . . . . . . . . . . . . 406
@@ -588,7 +588,7 @@ Contents:
 * 32.2.2 Jenkins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 408
 * 32.3 Continuous Integration as a Service . . . . . . . . . . . . . . . . . . . . . . . . . 408
 * 32.3.1 Code Coverage as a Service . . . . . . . . . . . . . . . . . . . . . . . . . 409
-* 32.4 Additional Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
+* 32.4 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
 * 32.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
 * 33 The Art of Debugging 411
 * 33.1 Debugging in Development . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
@@ -621,12 +621,12 @@ Contents:
 * Check Your Virtualenv Installation . . . . . . . . . . . . . . . . . . . . . . . . . . 436
 * Check If Your Virtualenv Has Django 1.8 Installed . . . . . . . . . . . . . . . . . 437
 * Check For Other Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
-* Appendix C: Additional Resources 439
+* Appendix C: 参考情報 439
 * Beginner Python Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
 * Beginner Django Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
 * More Advanced Django Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
 * Useful Python Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
-* JavaScript Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+* JavaScriptについての参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
 * Appendix D: Internationalization and Localization 445
 * Start Early . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
 * Wrap Content Strings with Translation Functions . . . . . . . . . . . . . . . . . . . . . 446
@@ -638,9 +638,9 @@ Contents:
 * Most Critical Packages Work with Python 3 . . . . . . . . . . . . . . . . . . . . . . . . 455
 * Use Python 3.3.3 or Later . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
 * Working With Python 2 and 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
-* Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 458
-* Appendix G: Security Settings Reference 459
-* SESSION SERIALIZER . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
+* 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 458
+* Appendix G: セキュリティ設定リファレンス 459
+* セッションシリアライザ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
 * Acknowledgments 461
 * List of Figures 466
 * List of Tables 469
