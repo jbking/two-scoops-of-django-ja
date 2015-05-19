@@ -613,31 +613,31 @@ Contents:
 * 34.4 Insider Tip: Be Active in the Community . . . . . . . . . . . . . . . . . . . . . 422
 * 34.4.1 9 Easy Ways to Participate . . . . . . . . . . . . . . . . . . . . . . . . . 423
 * 34.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
-* 35 Closing Thoughts 425
-* Appendix A: Packages Mentioned In This Book 427
-* Appendix B: Troubleshooting Installation 435
-* Identifying the Issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 435
-* Our Recommended Solutions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
-* Check Your Virtualenv Installation . . . . . . . . . . . . . . . . . . . . . . . . . . 436
-* Check If Your Virtualenv Has Django 1.8 Installed . . . . . . . . . . . . . . . . . 437
-* Check For Other Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+* 35 終わりかえて 425
+* Appendix A: 書籍で紹介したパッケージ 427
+* Appendix B: インストールトラブルシューティング 435
+* 何が起きているか明かにする . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 435
+* おすすめのソリューション . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+* Virtualenvを確認する . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+* もしVirtualenvにDjango 1.8をインストールしていたら . . . . . . . . . . . . . . . . . 437
+* 他のところも確認する . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
 * Appendix C: 参考情報 439
-* Beginner Python Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
-* Beginner Django Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
-* More Advanced Django Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
-* Useful Python Material . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
-* JavaScriptについての参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
-* Appendix D: Internationalization and Localization 445
-* Start Early . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
-* Wrap Content Strings with Translation Functions . . . . . . . . . . . . . . . . . . . . . 446
-* Don’t Interpolate Words in Sentences . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
-* Browser Page Layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
-* Appendix E: Settings Alternatives 453
-* Twelve Factor-Style Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
-* Appendix F: Working with Python 3 455
-* Most Critical Packages Work with Python 3 . . . . . . . . . . . . . . . . . . . . . . . . 455
-* Use Python 3.3.3 or Later . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
-* Working With Python 2 and 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+* Python初心者向け . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
+* Django初心者向け . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 439
+* Django中級者以上向け . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+* Pythonについて . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+* JavaScriptについて . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+* Appendix D: 国際化と地域化 445
+* はやく着手して! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
+* 国際化のための関数を使う . . . . . . . . . . . . . . . . . . . . . 446
+* メッセージを書き換えない . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+* ブラウザにおけるページレイアウト . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+* Appendix E: ある別のSettingsへのアプローチ 453
+* Twelve FactorスタイルSettings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+* Appendix F: Python 3で動かす 455
+* コアパッケージはPython 3で動作します . . . . . . . . . . . . . . . . . . . . . . . . 455
+* Python 3.3.3以降を使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+* Python 2とPython 3で動かす . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
 * 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 458
 * Appendix G: セキュリティ設定リファレンス 459
 * セッションシリアライザ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
