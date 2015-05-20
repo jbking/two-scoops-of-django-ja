@@ -65,53 +65,53 @@ Contents:
 * 3.5 レイアウト生成に Cookiecutter テンプレートを使う . . . . . . . . . . . . . . 28
 * 3.6 他のやり方 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 * 3.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
-* 4 Fundamentals of Django App Design 31
-* 4.1 The Golden Rule of Django App Design . . . . . . . . . . . . . . . . . . . . . . 32
-* 4.1.1 A Practical Example of Apps in a Project . . . . . . . . . . . . . . . . . . 33
-* 4.2 What to Name Your Django Apps . . . . . . . . . . . . . . . . . . . . . . . . . 34
-* 4.3 When in Doubt, Keep Apps Small . . . . . . . . . . . . . . . . . . . . . . . . . 35
-* 4.4 What Modules Belong in an App? . . . . . . . . . . . . . . . . . . . . . . . . . 35
-* 4.4.1 Common App Modules . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
-* 4.4.2 Uncommon App Modules . . . . . . . . . . . . . . . . . . . . . . . . . 36
+* 4 Django アプリデザインの基礎 31
+* 4.1 Django アプリデザインのゴールデンルール . . . . . . . . . . . . . . . . . . . . . . 32
+* 4.1.1 プロジェクト内アプリの実用的な例 . . . . . . . . . . . . . . . . . . 33
+* 4.2 Django アプリはどんな名前にするべきか . . . . . . . . . . . . . . . . . . . . . . . . . 34
+* 4.3 迷ったらアプリは小さくしよう . . . . . . . . . . . . . . . . . . . . . . . . . 35
+* 4.4 アプリにはあるモジュールはどんなもの? . . . . . . . . . . . . . . . . . . . . . . . . . 35
+* 4.4.1 よくあるアプリのモジュール . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+* 4.4.2 まれにあるアプリのモジュール . . . . . . . . . . . . . . . . . . . . . . . . . 36
 * 4.5 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
-* 5 Settings and Requirements Files 39
-* 5.1 Avoid Non-Versioned Local Settings . . . . . . . . . . . . . . . . . . . . . . . . 40
-* 5.2 Using Multiple Settings Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
-* 5.2.1 A Development Settings Example . . . . . . . . . . . . . . . . . . . . . 44
-* 5.2.2 Multiple Development Settings . . . . . . . . . . . . . . . . . . . . . . . 45
-* 5.3 Separate Configuration From Code . . . . . . . . . . . . . . . . . . . . . . . . . 46
-* 5.3.1 A Caution Before Using Environment Variables for Secrets . . . . . . . . 47
-* 5.3.2 How to Set Environment Variables Locally . . . . . . . . . . . . . . . . 47
-* 5.3.3 How to Set Environment Variables in Production . . . . . . . . . . . . . 49
-* 5.3.4 Handling Missing Secret Key Exceptions . . . . . . . . . . . . . . . . . 50
-* 5.4 When You Can’t Use Environment Variables . . . . . . . . . . . . . . . . . . . . 52
-* 5.4.1 Using JSON Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
-* 5.4.2 Using Config, YAML, and XML File Formats . . . . . . . . . . . . . . 53
-* 5.5 Using Multiple Requirements Files . . . . . . . . . . . . . . . . . . . . . . . . . 53
-* 5.5.1 Installing From Multiple Requirements Files . . . . . . . . . . . . . . . . 55
-* 5.5.2 Using Multiple Requirements Files With Platforms as a Service (PaaS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
-* 5.6 Handling File Paths in Settings . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+* 5 Settings と Requirements ファイル 39
+* 5.1 バージョン管理しないローカル Settings を避ける. . . . . . . . . . . . . . . . . . . . . . . . 40
+* 5.2 複数の Settings ファイルを使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+* 5.2.1 開発用 Settings の例 . . . . . . . . . . . . . . . . . . . . . 44
+* 5.2.2 複数の開発用 Settings . . . . . . . . . . . . . . . . . . . . . . . 45
+* 5.3 設定をコードから分離する . . . . . . . . . . . . . . . . . . . . . . . . . 46
+* 5.3.1 環境変数をシークレットな値に使う前の注意 . . . . . . . . 47
+* 5.3.2 環境変数を開発環境で設定する方法 . . . . . . . . . . . . . . . . 47
+* 5.3.3 環境変数を本番環境で設定する方法 . . . . . . . . . . . . . 49
+* 5.3.4 キークレットキーが存在しない例外を扱う . . . . . . . . . . . . . . . . . 50
+* 5.4 環境変数が使えない場合 . . . . . . . . . . . . . . . . . . . . 52
+* 5.4.1 JSON ファイルを使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+* 5.4.2 Config, YAML, や XML ファイルフォーマットを使う . . . . . . . . . . . . . . 53
+* 5.5 複数の Requirements ファイルを使う . . . . . . . . . . . . . . . . . . . . . . . . . 53
+* 5.5.1 複数の Requirements ファイルからインストールする . . . . . . . . . . . . . . . . 55
+* 5.5.2 Platforms as a Service (PaaS) で複数の Requirements ファイルを使う . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+* 5.6 Settings でファイルパスを扱う . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
 * 5.7 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
-* 6 Model Best Practices 61
-* 6.1 Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
-* 6.1.1 Break Up Apps With Too Many Models . . . . . . . . . . . . . . . . . . 62
-* 6.1.2 Be Careful With Model Inheritance . . . . . . . . . . . . . . . . . . . . 62
-* 6.1.3 Model Inheritance in Practice: The TimeStampedModel . . . . . . . . . 64
+* 6 Model ベストプラクティス 61
+* 6.1 基本 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+* 6.1.1 大量の Models を分割する. . . . . . . . . . . . . . . . . . 62
+* 6.1.2 Model の継承に気をつけよう . . . . . . . . . . . . . . . . . . . . 62
+* 6.1.3 Model 継承の実用例: TimeStampedModel . . . . . . . . . 64
 * 6.1.4 Database Migrations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
-* 6.2 Django Model Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
-* 6.2.1 Start Normalized . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
-* 6.2.2 Cache Before Denormalizing . . . . . . . . . . . . . . . . . . . . . . . . 67
-* 6.2.3 Denormalize Only if Absolutely Needed . . . . . . . . . . . . . . . . . . 67
-* 6.2.4 When to Use Null and Blank . . . . . . . . . . . . . . . . . . . . . . . . 68
-* 6.2.5 When to Use BinaryField . . . . . . . . . . . . . . . . . . . . . . . . . . 70
-* 6.2.6 Try to Avoid Using Generic Relations . . . . . . . . . . . . . . . . . . . 71
-* 6.2.7 PostgreSQL-Specific Fields: When to Use Null and Blank . . . . . . . . 72
-* 6.3 The Model meta API . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
-* 6.4 Model Managers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
-* 6.5 Understanding Fat Models . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
-* 6.5.1 Model Behaviors a.k.a Mixins . . . . . . . . . . . . . . . . . . . . . . . 76
-* 6.5.2 Stateless Helper Functions . . . . . . . . . . . . . . . . . . . . . . . . . 77
-* 6.5.3 Model Behaviors vs Helper Functions . . . . . . . . . . . . . . . . . . . 77
+* 6.2 Django Model デザイン . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+* 6.2.1 正規化をはじめよう . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+* 6.2.2 非正規化の前にキャッシュしよう . . . . . . . . . . . . . . . . . . . . . . . . 67
+* 6.2.3 非正規化は絶対に必要なときだけ . . . . . . . . . . . . . . . . . . 67
+* 6.2.4 Null と Blank を使うとき . . . . . . . . . . . . . . . . . . . . . . . . 68
+* 6.2.5 BinaryField を使うとき . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+* 6.2.6 Generic Relations を使うのは避けよう . . . . . . . . . . . . . . . . . . . 71
+* 6.2.7 PostgreSQL 特有フィールド: Null と Blank を使うとき . . . . . . . . 72
+* 6.3 Model _meta API . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+* 6.4 Model Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+* 6.5 ファットな Model とは何か . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+* 6.5.1 Model Behavior - Mixins . . . . . . . . . . . . . . . . . . . . . . . 76
+* 6.5.2 ステートレスなヘルパー関数 . . . . . . . . . . . . . . . . . . . . . . . . . 77
+* 6.5.3 Model Behavior vs ヘルパー関数 . . . . . . . . . . . . . . . . . . . 77
 * 6.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
 * 7 Queries and the Database Layer 79
 * 7.1 Use get object or 404() for Single Objects . . . . . . . . . . . . . . . . . . . . . 79
