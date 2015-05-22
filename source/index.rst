@@ -220,19 +220,19 @@ Contents:
 * 12.4 Pattern 4: Hacking Form Fields (2 CBVs, 2 Forms, 1 Model) . . . . . . . . . . . 155
 * 12.5 Pattern 5: Reusable Search Mixin View . . . . . . . . . . . . . . . . . . . . . . . 159
 * 12.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
-* 13 Templates: Best Practices 163
-* 13.1 Keep Templates Mostly in templates/ . . . . . . . . . . . . . . . . . . . . . . 163
-* 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
-* 13.2.1 2-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 164
-* 13.2.2 3-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 165
-* 13.2.3 Flat Is Better Than Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
-* 13.3 Limit Processing in Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
-* 13.3.1 Gotcha 1: Aggregation in Templates . . . . . . . . . . . . . . . . . . . . 169
-* 13.3.2 Gotcha 2: Filtering With Conditionals in Templates . . . . . . . . . . . 171
-* 13.3.3 Gotcha 3: Complex Implied Queries in Templates . . . . . . . . . . . . . 173
-* 13.3.4 Gotcha 4: Hidden CPU Load in Templates . . . . . . . . . . . . . . . . 174
-* 13.3.5 Gotcha 5: Hidden REST API Calls in Templates . . . . . . . . . . . . . 175
-* 13.4 Don’t Bother Making Your Generated HTML Pretty . . . . . . . . . . . . . . . 175
+* 13 テンプレート: ベストプラクティス 163
+* 13.1 テンプレートはtemplatesディレクトリの中に . . . . . . . . . . . . . . . . . . . . . . 163
+* 13.2 テンプレートアーキテクチャパターン . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+* 13.2.1 2層テンプレートアーキテクチャ . . . . . . . . . . . . . . . . . . . 164
+* 13.2.2 3層テンプレートアーキテクチャ . . . . . . . . . . . . . . . . . . . 165
+* 13.2.3 フラットはネストよりいい . . . . . . . . . . . . . . . . . . . . . . . . . 166
+* 13.3 テンプレートでの処理を制限する . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+* 13.3.1 落とし穴1: テンプレートのなかの集約処理 . . . . . . . . . . . . . . . . . . . . 169
+* 13.3.2 落とし穴2: テンプレートのなかの条件付きフィルタリング . . . . . . . . . . . 171
+* 13.3.3 落とし穴3: テンプレートのなかの複雑なクエリを実行する . . . . . . . . . . . . . 173
+* 13.3.4 落とし穴4: テンプレートのなかの隠れた計算処理 . . . . . . . . . . . . . . . . 174
+* 13.3.5 落とし穴5: テンプレートのなかの隠れた外部APIコール . . . . . . . . . . . . . 175
+* 13.4 HTMLが綺麗に出力されるかで悩まないいいい . . . . . . . . . . . . . . . 175
 * 15.3.2 Using Template Tags in Jinja2 Templates . . . . . . . . . . . . . . . . . 196
 * 15.3.3 Using Django-Style Template Filters in Jinja2 Templates . . . . . . . . . 196
 * 15.3.4 Context Processors Aren’t Called by Jinja2 Templates . . . . . . . . . . . 198
