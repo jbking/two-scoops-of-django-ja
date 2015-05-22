@@ -187,39 +187,6 @@ Contents:
 * 12.4 Pattern 4: Hacking Form Fields (2 CBVs, 2 Forms, 1 Model) . . . . . . . . . . . 155
 * 12.5 Pattern 5: Reusable Search Mixin View . . . . . . . . . . . . . . . . . . . . . . . 159
 * 12.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
-* 13 Templates: Best Practices 163
-* 13.1 Keep Templates Mostly in templates/ . . . . . . . . . . . . . . . . . . . . . . 163
-* 13.2 Template Architecture Patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
-* 13.2.1 2-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 164
-* 13.2.2 3-Tier Template Architecture Example . . . . . . . . . . . . . . . . . . . 165
-* 13.2.3 Flat Is Better Than Nested . . . . . . . . . . . . . . . . . . . . . . . . . 166
-* 13.3 Limit Processing in Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
-* 13.3.1 Gotcha 1: Aggregation in Templates . . . . . . . . . . . . . . . . . . . . 169
-* 13.3.2 Gotcha 2: Filtering With Conditionals in Templates . . . . . . . . . . . 171
-* 13.3.3 Gotcha 3: Complex Implied Queries in Templates . . . . . . . . . . . . . 173
-* 13.3.4 Gotcha 4: Hidden CPU Load in Templates . . . . . . . . . . . . . . . . 174
-* 13.3.5 Gotcha 5: Hidden REST API Calls in Templates . . . . . . . . . . . . . 175
-* 13.4 Don’t Bother Making Your Generated HTML Pretty . . . . . . . . . . . . . . . 175
-* 10.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
-* 10.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
-* 11 Form Fundamentals 135
-* 11.1 Validate All Incoming Data With Django Forms . . . . . . . . . . . . . . . . . . 135
-* 11.2 Use the POST Method in HTML Forms . . . . . . . . . . . . . . . . . . . . . 138
-* 11.3 Always Use CSRF Protection With HTTP Forms That Modify Data . . . . . . . 138
-* 11.3.1 Posting Data via AJAX . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
-* 11.4 Understand How to Add Django Form Instance Attributes . . . . . . . . . . . . 139
-* 11.5 Know How Form Validation Works . . . . . . . . . . . . . . . . . . . . . . . . . 141
-* 11.5.1 ModelForm Data Is Saved to the Form, Then the Model Instance . . . . 142
-* 11.6 Fields Without Pre-Made Widgets . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.7 参考情報 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 11.8 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
-* 12 Common Patterns for Forms 145
-* 12.1 Pattern 1: Simple ModelForm With Default Validators . . . . . . . . . . . . . . 146
-* 12.2 Pattern 2: Custom Form Field Validators in ModelForms . . . . . . . . . . . . . 147
-* 12.3 Pattern 3: Overriding the Clean Stage of Validation . . . . . . . . . . . . . . . . 152
-* 12.4 Pattern 4: Hacking Form Fields (2 CBVs, 2 Forms, 1 Model) . . . . . . . . . . . 155
-* 12.5 Pattern 5: Reusable Search Mixin View . . . . . . . . . . . . . . . . . . . . . . . 159
-* 12.6 まとめ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
 * 13 テンプレート: ベストプラクティス 163
 * 13.1 テンプレートはtemplatesディレクトリの中に . . . . . . . . . . . . . . . . . . . . . . 163
 * 13.2 テンプレートアーキテクチャパターン . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
