@@ -233,6 +233,40 @@ Contents:
 * 13.3.4 落とし穴4: テンプレートのなかの隠れた計算処理 . . . . . . . . . . . . . . . . 174
 * 13.3.5 落とし穴5: テンプレートのなかの隠れた外部APIコール . . . . . . . . . . . . . 175
 * 13.4 HTMLが綺麗に出力されるかで悩まないいいい . . . . . . . . . . . . . . . 175
+* 13.5 Exploring Template Inheritance . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+* 13.6 block.super Gives the Power of Control . . . . . . . . . . . . . . . . . . . . . . . 180
+* 13.7 Useful Things to Consider . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+* 13.7.1 Avoid Coupling Styles Too Tightly to Python Code . . . . . . . . . . . . 182
+* 13.7.2 Common Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+* 13.7.3 Location, Location, Location! . . . . . . . . . . . . . . . . . . . . . . . 183
+* 13.7.4 Use Named Context Objects . . . . . . . . . . . . . . . . . . . . . . . . 183
+* 13.7.5 Use URL Names Instead of Hardcoded Paths . . . . . . . . . . . . . . . 184
+* 13.7.6 Debugging Complex Templates . . . . . . . . . . . . . . . . . . . . . . 184
+* 13.8 Error Page Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+* 13.9 Follow a Minimalist Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+* 13.10 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+* 14 Template Tags and Filters 187
+* 14.1 Filters Are Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+* 14.1.1 Filters Are Easy to Test . . . . . . . . . . . . . . . . . . . . . . . . . . . 188
+* 14.1.2 Filters and Code Reuse . . . . . . . . . . . . . . . . . . . . . . . . . . . 188
+* 14.1.3 When to Write Filters . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+* 14.2 Custom Template Tags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+* 14.2.1 Template Tags Are Harder to Debug . . . . . . . . . . . . . . . . . . . . 189
+* 14.2.2 Template Tags Make Code Reuse Harder . . . . . . . . . . . . . . . . . 189
+* 14.2.3 The Performance Cost of Template Tags . . . . . . . . . . . . . . . . . . 189
+* 14.2.4 When to Write Template Tags . . . . . . . . . . . . . . . . . . . . . . . 190
+* 14.3 Naming Your Template Tag Libraries . . . . . . . . . . . . . . . . . . . . . . . . 190
+* 14.4 Loading Your Template Tag Modules . . . . . . . . . . . . . . . . . . . . . . . . 191
+* 14.4.1 Watch Out for This Crazy Anti-Pattern . . . . . . . . . . . . . . . . . . 191
+* 14.5 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 192
+* 15 Django Templates and Jinja2 193
+* 15.1 What’s the Syntactical Difference? . . . . . . . . . . . . . . . . . . . . . . . . . 193
+* 15.2 Should I Switch? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+* 15.2.1 Advantages of DTL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+* 15.2.2 Advantages of Jinja2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+* 15.2.3 Which One Wins? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+* 15.3 Considerations When Using Jinja2 With Django . . . . . . . . . . . . . . . . . 195
+* 15.3.1 CSRF and Jinja2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 196
 * 15.3.2 Using Template Tags in Jinja2 Templates . . . . . . . . . . . . . . . . . 196
 * 15.3.3 Using Django-Style Template Filters in Jinja2 Templates . . . . . . . . . 196
 * 15.3.4 Context Processors Aren’t Called by Jinja2 Templates . . . . . . . . . . . 198
